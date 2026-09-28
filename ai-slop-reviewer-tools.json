@@ -1,0 +1,2107 @@
+{
+  "meta": {
+    "title": "AI Slop Reviewer Tools Dataset",
+    "slug": "ai-slop-reviewer-tools",
+    "version": "1.0.0",
+    "generatedAt": "2026-09-28T16:45:00-04:00",
+    "itemCount": 66,
+    "categoryCount": 10,
+    "schema": {
+      "id": "kebab-case stable id",
+      "name": "display name",
+      "shortName": "short label",
+      "type": [
+        "website",
+        "repo",
+        "commercial",
+        "list",
+        "extension",
+        "skill"
+      ],
+      "category": "category id",
+      "url": "canonical public URL",
+      "repo": "GitHub URL if any",
+      "docsUrl": "docs or explainer if distinct from url",
+      "description": "one or two sentences",
+      "modalities": [
+        "text",
+        "code",
+        "design",
+        "image",
+        "video",
+        "audio"
+      ],
+      "functions": [
+        "detect",
+        "review",
+        "lint",
+        "remove",
+        "provenance",
+        "benchmark",
+        "catalog"
+      ],
+      "access": [
+        "free",
+        "freemium",
+        "paid",
+        "self-hosted",
+        "institution"
+      ],
+      "privacy": [
+        "local",
+        "cloud",
+        "n/a"
+      ],
+      "platforms": "where it runs",
+      "tags": "facets",
+      "relatedIds": "other item ids",
+      "notes": "caveats"
+    },
+    "disclaimer": "Scores from detectors are probabilistic signals, not proof of authorship. Independent accuracy and false-positive rates disagree across vendors. Provenance beats classification when a C2PA or first-party watermark is present. This dataset is a catalog compiled 2026-09-28 from public product pages, GitHub topics, and published comparisons; it is not an endorsement ranking.",
+    "countsByCategory": {
+      "meta-lists": 7,
+      "slop-review-sites": 5,
+      "design-slop": 5,
+      "benchmarks": 3,
+      "code-slop": 8,
+      "writing-rules": 8,
+      "text-detectors": 12,
+      "oss-text-engines": 8,
+      "synthetic-media": 7,
+      "provenance": 3
+    }
+  },
+  "categories": [
+    {
+      "id": "meta-lists",
+      "label": "Meta lists and directories",
+      "description": "Curated catalogs of detectors, slop tools, and related research."
+    },
+    {
+      "id": "slop-review-sites",
+      "label": "Dedicated slop review sites",
+      "description": "Sites that score generic AI style, vibe-coded pages, or slop vs substance rather than only authorship."
+    },
+    {
+      "id": "text-detectors",
+      "label": "Mainstream text detectors",
+      "description": "Commercial or consumer tools that estimate whether prose was machine-generated."
+    },
+    {
+      "id": "oss-text-engines",
+      "label": "Open-source and local text engines",
+      "description": "Self-hosted, local, or research detectors for generated text."
+    },
+    {
+      "id": "writing-rules",
+      "label": "Writing slop rule sets",
+      "description": "Pattern catalogs, linters, and agent skills that flag or rewrite slop tells."
+    },
+    {
+      "id": "code-slop",
+      "label": "Code slop reviewers",
+      "description": "CLIs, Actions, and scanners for agent-residue and low-quality AI-generated code."
+    },
+    {
+      "id": "design-slop",
+      "label": "Design and product slop",
+      "description": "Tools that catch template UI, default stacks, and visual AI product tics."
+    },
+    {
+      "id": "synthetic-media",
+      "label": "Image, video, and audio forensics",
+      "description": "Classifiers and deepfake tools for generated or manipulated media."
+    },
+    {
+      "id": "provenance",
+      "label": "Provenance and watermarking",
+      "description": "Content Credentials, C2PA, and first-party watermark readers."
+    },
+    {
+      "id": "benchmarks",
+      "label": "Benchmarks and research kits",
+      "description": "Datasets and toolkits used to evaluate detectors."
+    }
+  ],
+  "items": [
+    {
+      "repo": "https://github.com/ravsau/awesome-ai-slop-removal",
+      "docsUrl": null,
+      "shortName": "Awesome AI Slop Removal",
+      "platforms": [
+        "github"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "awesome-ai-slop-removal",
+      "name": "Awesome AI Slop Removal",
+      "type": "list",
+      "category": "meta-lists",
+      "url": "https://github.com/ravsau/awesome-ai-slop-removal",
+      "description": "Curated map of slop detection and removal: 13-category taxonomy, 200+ tells, detectors, linters, and design skills.",
+      "modalities": [
+        "text",
+        "code",
+        "design"
+      ],
+      "functions": [
+        "catalog"
+      ],
+      "access": "free",
+      "privacy": "n/a",
+      "tags": [
+        "awesome-list",
+        "taxonomy",
+        "rules"
+      ]
+    },
+    {
+      "repo": "https://github.com/oskar-j/awesome-ai-spotter",
+      "docsUrl": null,
+      "shortName": "Awesome AI Spotter",
+      "platforms": [
+        "github"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "awesome-ai-spotter",
+      "name": "Awesome AI Spotter",
+      "type": "list",
+      "category": "meta-lists",
+      "url": "https://github.com/oskar-j/awesome-ai-spotter",
+      "description": "Countermeasures list covering LLM text, deepfake media, watermarking, models, and datasets.",
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ],
+      "functions": [
+        "catalog"
+      ],
+      "access": "free",
+      "privacy": "n/a",
+      "tags": [
+        "awesome-list",
+        "deepfake",
+        "watermarking"
+      ]
+    },
+    {
+      "repo": "https://github.com/ai-detected/ai-content-detectors",
+      "docsUrl": null,
+      "shortName": "AI Content Detectors List",
+      "platforms": [
+        "github"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "ai-content-detectors-list",
+      "name": "AI Content Detectors List",
+      "type": "list",
+      "category": "meta-lists",
+      "url": "https://github.com/ai-detected/ai-content-detectors",
+      "description": "Directory-style awesome list of text AI content detectors.",
+      "modalities": [
+        "text"
+      ],
+      "functions": [
+        "catalog"
+      ],
+      "access": "free",
+      "privacy": "n/a",
+      "tags": [
+        "awesome-list",
+        "text"
+      ]
+    },
+    {
+      "repo": "https://github.com/ai-detected/ai-detectors",
+      "docsUrl": null,
+      "shortName": "AI Detectors for Images Videos Audio",
+      "platforms": [
+        "github"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "ai-media-detectors-list",
+      "name": "AI Detectors for Images Videos Audio",
+      "type": "list",
+      "category": "meta-lists",
+      "url": "https://github.com/ai-detected/ai-detectors",
+      "description": "Awesome list of detectors for AI-generated images, video, audio, and deepfakes.",
+      "modalities": [
+        "image",
+        "video",
+        "audio"
+      ],
+      "functions": [
+        "catalog"
+      ],
+      "access": "free",
+      "privacy": "n/a",
+      "tags": [
+        "awesome-list",
+        "media"
+      ]
+    },
+    {
+      "repo": null,
+      "docsUrl": null,
+      "shortName": "GitHub topic: slop-detector",
+      "platforms": [
+        "github"
+      ],
+      "relatedIds": [
+        "github-topic-ai-slop-detection"
+      ],
+      "notes": null,
+      "id": "github-topic-slop-detector",
+      "name": "GitHub topic: slop-detector",
+      "type": "list",
+      "category": "meta-lists",
+      "url": "https://github.com/topics/slop-detector",
+      "description": "Live GitHub topic feed for slop-detector repos and Actions.",
+      "modalities": [
+        "text",
+        "code"
+      ],
+      "functions": [
+        "catalog"
+      ],
+      "access": "free",
+      "privacy": "n/a",
+      "tags": [
+        "topic",
+        "discovery"
+      ]
+    },
+    {
+      "repo": null,
+      "docsUrl": null,
+      "shortName": "GitHub topic: ai-slop-detection",
+      "platforms": [
+        "github"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "github-topic-ai-slop-detection",
+      "name": "GitHub topic: ai-slop-detection",
+      "type": "list",
+      "category": "meta-lists",
+      "url": "https://github.com/topics/ai-slop-detection",
+      "description": "Live GitHub topic feed for AI slop detection tooling.",
+      "modalities": [
+        "text",
+        "code"
+      ],
+      "functions": [
+        "catalog"
+      ],
+      "access": "free",
+      "privacy": "n/a",
+      "tags": [
+        "topic",
+        "discovery"
+      ]
+    },
+    {
+      "repo": null,
+      "docsUrl": null,
+      "shortName": "DetectorTools.ai",
+      "platforms": [
+        "web"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "detectortools-ai",
+      "name": "DetectorTools.ai",
+      "type": "website",
+      "category": "meta-lists",
+      "url": "https://detectortools.ai",
+      "description": "Public directory of AI detectors across content and media types.",
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ],
+      "functions": [
+        "catalog"
+      ],
+      "access": "free",
+      "privacy": "n/a",
+      "tags": [
+        "directory"
+      ]
+    },
+    {
+      "repo": null,
+      "docsUrl": null,
+      "shortName": "SlopDetector",
+      "platforms": [
+        "web",
+        "chrome"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "slopdetector-org",
+      "name": "SlopDetector",
+      "type": "website",
+      "category": "slop-review-sites",
+      "url": "https://slopdetector.org",
+      "description": "Scores text slop across vocabulary, cliché, structure, diversity, and substance. Local Chrome extension available.",
+      "modalities": [
+        "text"
+      ],
+      "functions": [
+        "review",
+        "detect"
+      ],
+      "access": "freemium",
+      "privacy": "local",
+      "tags": [
+        "slop-score",
+        "extension",
+        "explainable"
+      ]
+    },
+    {
+      "repo": null,
+      "docsUrl": null,
+      "shortName": "AntiSlop",
+      "platforms": [
+        "web"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "antislop-online",
+      "name": "AntiSlop",
+      "type": "website",
+      "category": "slop-review-sites",
+      "url": "https://antislop.online",
+      "description": "Free detector plus detection guides, Hall of Shame, and State of Slop reporting.",
+      "modalities": [
+        "text"
+      ],
+      "functions": [
+        "detect",
+        "review",
+        "catalog"
+      ],
+      "access": "free",
+      "privacy": "cloud",
+      "tags": [
+        "guide",
+        "hall-of-shame",
+        "research"
+      ]
+    },
+    {
+      "repo": null,
+      "docsUrl": null,
+      "shortName": "Slop or Not",
+      "platforms": [
+        "web",
+        "ios",
+        "macos"
+      ],
+      "relatedIds": [],
+      "notes": "Desktop apps can run checks on-device.",
+      "id": "slop-or-not",
+      "name": "Slop or Not",
+      "type": "website",
+      "category": "slop-review-sites",
+      "url": "https://slopornot.ai",
+      "description": "Text and product-review slop checker with comparison pages against major detectors.",
+      "modalities": [
+        "text"
+      ],
+      "functions": [
+        "detect",
+        "review"
+      ],
+      "access": "freemium",
+      "privacy": "cloud",
+      "tags": [
+        "reviews",
+        "comparison"
+      ]
+    },
+    {
+      "repo": null,
+      "docsUrl": "https://rajiv.com/blog/2026/05/31/slop-detection-not-ai-detection/",
+      "shortName": "Slopcheck",
+      "platforms": [
+        "web"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "slopcheck",
+      "name": "Slopcheck",
+      "type": "website",
+      "category": "slop-review-sites",
+      "url": "https://tools.synthesiswriting.org/slopcheck/",
+      "description": "Splits AI-provenance signals from slop-independence / substance. Free, no account.",
+      "modalities": [
+        "text"
+      ],
+      "functions": [
+        "review",
+        "detect"
+      ],
+      "access": "free",
+      "privacy": "cloud",
+      "tags": [
+        "two-axis",
+        "editorial",
+        "substance"
+      ]
+    },
+    {
+      "repo": null,
+      "docsUrl": null,
+      "shortName": "Slop Detect (landing pages)",
+      "platforms": [
+        "web"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "slop-detect-com",
+      "name": "Slop Detect (landing pages)",
+      "type": "website",
+      "category": "design-slop",
+      "url": "https://slop-detect.com",
+      "description": "Deterministic Chromium scan of landing pages against 27 AI-design and copy fingerprints.",
+      "modalities": [
+        "design",
+        "text"
+      ],
+      "functions": [
+        "review"
+      ],
+      "access": "free",
+      "privacy": "cloud",
+      "tags": [
+        "css",
+        "landing-page",
+        "aeo"
+      ]
+    },
+    {
+      "repo": "https://github.com/Slopdar/slopdar",
+      "docsUrl": null,
+      "shortName": "Slopdar",
+      "platforms": [
+        "web",
+        "self-hosted"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "slopdar",
+      "name": "Slopdar",
+      "type": "website",
+      "category": "design-slop",
+      "url": "https://slopdar.com",
+      "description": "URL scanner that returns a 0-100 slop score for vibe-coded sites with receipts.",
+      "modalities": [
+        "design",
+        "text",
+        "code"
+      ],
+      "functions": [
+        "review"
+      ],
+      "access": "free",
+      "privacy": "cloud",
+      "tags": [
+        "vibe-coding",
+        "website-scanner"
+      ]
+    },
+    {
+      "repo": null,
+      "docsUrl": null,
+      "shortName": "The Slop Index",
+      "platforms": [
+        "web"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "the-slop-index",
+      "name": "The Slop Index",
+      "type": "website",
+      "category": "benchmarks",
+      "url": "https://www.theslopindex.com/",
+      "description": "Live benchmark of how much each frontier model writes like chatbot slop versus pre-ChatGPT human text.",
+      "modalities": [
+        "text"
+      ],
+      "functions": [
+        "benchmark"
+      ],
+      "access": "free",
+      "privacy": "n/a",
+      "tags": [
+        "models",
+        "leaderboard"
+      ]
+    },
+    {
+      "repo": "https://github.com/yetone/kill-ai-slop",
+      "docsUrl": null,
+      "shortName": "Kill AI Slop",
+      "platforms": [
+        "web",
+        "claude-code",
+        "cursor",
+        "codex"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "kill-ai-slop",
+      "name": "Kill AI Slop",
+      "type": "skill",
+      "category": "design-slop",
+      "url": "https://killaislop.com",
+      "description": "Field guide of visual and copy product tells plus an agent skill that scans a project and strips them.",
+      "modalities": [
+        "design",
+        "text"
+      ],
+      "functions": [
+        "review",
+        "remove"
+      ],
+      "access": "free",
+      "privacy": "local",
+      "tags": [
+        "agent-skill",
+        "ui-tells"
+      ]
+    },
+    {
+      "repo": null,
+      "docsUrl": null,
+      "shortName": "sloprank",
+      "platforms": [
+        "web"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "sloprank",
+      "name": "sloprank",
+      "type": "website",
+      "category": "code-slop",
+      "url": "https://sloprank.io",
+      "description": "Algorithm plus community scores for whether a GitHub repo is slop or crafted.",
+      "modalities": [
+        "code"
+      ],
+      "functions": [
+        "review"
+      ],
+      "access": "free",
+      "privacy": "cloud",
+      "tags": [
+        "github",
+        "community"
+      ]
+    },
+    {
+      "repo": null,
+      "docsUrl": null,
+      "shortName": "MeltingFace",
+      "platforms": [
+        "web"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "meltingface",
+      "name": "MeltingFace",
+      "type": "website",
+      "category": "code-slop",
+      "url": "https://www.melting-face.com/",
+      "description": "Crowdsourced slop ratings of trending repos and AI tools.",
+      "modalities": [
+        "code"
+      ],
+      "functions": [
+        "review"
+      ],
+      "access": "free",
+      "privacy": "cloud",
+      "tags": [
+        "community",
+        "repos"
+      ]
+    },
+    {
+      "repo": null,
+      "docsUrl": "https://enhancepost.com/blog/ai-slop-words-phrases-list/",
+      "shortName": "EnhancePost Anti-Slop Editor",
+      "platforms": [
+        "web"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "enhancepost-antislop-editor",
+      "name": "EnhancePost Anti-Slop Editor",
+      "type": "website",
+      "category": "writing-rules",
+      "url": "https://enhancepost.com/antislop/",
+      "description": "In-browser highlighter that flags slop phrases and offers replacements. Draft stays local.",
+      "modalities": [
+        "text"
+      ],
+      "functions": [
+        "review",
+        "remove"
+      ],
+      "access": "free",
+      "privacy": "local",
+      "tags": [
+        "editor",
+        "phrases",
+        "taxonomy"
+      ]
+    },
+    {
+      "repo": null,
+      "docsUrl": null,
+      "shortName": "Tweeks Universal AI Slop Finder",
+      "platforms": [
+        "chrome",
+        "firefox"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "tweeks-universal-ai-slop-finder",
+      "name": "Tweeks Universal AI Slop Finder",
+      "type": "extension",
+      "category": "slop-review-sites",
+      "url": "https://www.tweeks.io/blog/what-is-ai-slop",
+      "description": "Local userscript that flags slop comments on X, Reddit, and YouTube using phrase and structure patterns.",
+      "modalities": [
+        "text"
+      ],
+      "functions": [
+        "review"
+      ],
+      "access": "free",
+      "privacy": "local",
+      "tags": [
+        "social",
+        "userscript",
+        "comments"
+      ]
+    },
+    {
+      "repo": null,
+      "docsUrl": null,
+      "shortName": "Pangram",
+      "platforms": [
+        "web",
+        "api",
+        "lms"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "pangram",
+      "name": "Pangram",
+      "type": "commercial",
+      "category": "text-detectors",
+      "url": "https://www.pangram.com/",
+      "description": "AI text detector with comparatively strong independent low-false-positive results and a free daily cap.",
+      "modalities": [
+        "text"
+      ],
+      "functions": [
+        "detect"
+      ],
+      "access": "freemium",
+      "privacy": "cloud",
+      "tags": [
+        "low-fp",
+        "education",
+        "humanizer-robust"
+      ]
+    },
+    {
+      "repo": null,
+      "docsUrl": null,
+      "shortName": "GPTZero",
+      "platforms": [
+        "web",
+        "chrome",
+        "api",
+        "lms"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "gptzero",
+      "name": "GPTZero",
+      "type": "commercial",
+      "category": "text-detectors",
+      "url": "https://gptzero.me/",
+      "description": "Widely used education detector with sentence highlights, writing-process tools, and a free tier.",
+      "modalities": [
+        "text"
+      ],
+      "functions": [
+        "detect"
+      ],
+      "access": "freemium",
+      "privacy": "cloud",
+      "tags": [
+        "education",
+        "sentence-level"
+      ]
+    },
+    {
+      "repo": null,
+      "docsUrl": null,
+      "shortName": "Originality.ai",
+      "platforms": [
+        "web",
+        "api",
+        "chrome"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "originality-ai",
+      "name": "Originality.ai",
+      "type": "commercial",
+      "category": "text-detectors",
+      "url": "https://originality.ai/",
+      "description": "Publisher and SEO integrity suite: AI detection, plagiarism, bulk scanning, and API.",
+      "modalities": [
+        "text"
+      ],
+      "functions": [
+        "detect"
+      ],
+      "access": "paid",
+      "privacy": "cloud",
+      "tags": [
+        "publishers",
+        "plagiarism",
+        "paraphrase"
+      ]
+    },
+    {
+      "repo": null,
+      "docsUrl": null,
+      "shortName": "Copyleaks AI Detector",
+      "platforms": [
+        "web",
+        "api",
+        "lms",
+        "chrome"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "copyleaks",
+      "name": "Copyleaks AI Detector",
+      "type": "commercial",
+      "category": "text-detectors",
+      "url": "https://copyleaks.com/ai-content-detector",
+      "description": "Enterprise multilingual AI and plagiarism detection; also covers source code and some media.",
+      "modalities": [
+        "text",
+        "code",
+        "image",
+        "video"
+      ],
+      "functions": [
+        "detect"
+      ],
+      "access": "freemium",
+      "privacy": "cloud",
+      "tags": [
+        "multilingual",
+        "enterprise",
+        "code"
+      ]
+    },
+    {
+      "repo": null,
+      "docsUrl": null,
+      "shortName": "Winston AI",
+      "platforms": [
+        "web",
+        "api",
+        "chrome"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "winston-ai",
+      "name": "Winston AI",
+      "type": "commercial",
+      "category": "text-detectors",
+      "url": "https://gowinston.ai/",
+      "description": "AI text detector with reports, OCR, readability, and image or deepfake extras.",
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "functions": [
+        "detect"
+      ],
+      "access": "paid",
+      "privacy": "cloud",
+      "tags": [
+        "reports",
+        "ocr",
+        "education"
+      ]
+    },
+    {
+      "repo": null,
+      "docsUrl": null,
+      "shortName": "Turnitin AI Writing Detection",
+      "platforms": [
+        "lms"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "turnitin",
+      "name": "Turnitin AI Writing Detection",
+      "type": "commercial",
+      "category": "text-detectors",
+      "url": "https://www.turnitin.com/solutions/topics/ai-writing/",
+      "description": "LMS-native AI writing indicator bundled with academic integrity workflows. Institution license only.",
+      "modalities": [
+        "text"
+      ],
+      "functions": [
+        "detect"
+      ],
+      "access": "institution",
+      "privacy": "cloud",
+      "tags": [
+        "education",
+        "lms"
+      ]
+    },
+    {
+      "repo": null,
+      "docsUrl": null,
+      "shortName": "Sapling AI Detector",
+      "platforms": [
+        "web",
+        "api",
+        "chrome"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "sapling",
+      "name": "Sapling AI Detector",
+      "type": "commercial",
+      "category": "text-detectors",
+      "url": "https://sapling.ai/ai-content-detector",
+      "description": "Fast web checker with a developer API for AI-generated text.",
+      "modalities": [
+        "text"
+      ],
+      "functions": [
+        "detect"
+      ],
+      "access": "freemium",
+      "privacy": "cloud",
+      "tags": [
+        "api",
+        "spot-check"
+      ]
+    },
+    {
+      "repo": null,
+      "docsUrl": null,
+      "shortName": "ZeroGPT",
+      "platforms": [
+        "web",
+        "api"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "zerogpt",
+      "name": "ZeroGPT",
+      "type": "website",
+      "category": "text-detectors",
+      "url": "https://www.zerogpt.com/",
+      "description": "No-login high-volume text detector. Convenient, but independent tests often show higher false positives.",
+      "modalities": [
+        "text"
+      ],
+      "functions": [
+        "detect"
+      ],
+      "access": "freemium",
+      "privacy": "cloud",
+      "tags": [
+        "no-login",
+        "high-traffic"
+      ]
+    },
+    {
+      "repo": null,
+      "docsUrl": null,
+      "shortName": "QuillBot AI Detector",
+      "platforms": [
+        "web"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "quillbot-ai-detector",
+      "name": "QuillBot AI Detector",
+      "type": "commercial",
+      "category": "text-detectors",
+      "url": "https://quillbot.com/ai-content-detector",
+      "description": "Consumer detector inside the QuillBot writing suite with phrase-level notes.",
+      "modalities": [
+        "text"
+      ],
+      "functions": [
+        "detect"
+      ],
+      "access": "freemium",
+      "privacy": "cloud",
+      "tags": [
+        "writing-suite"
+      ]
+    },
+    {
+      "repo": null,
+      "docsUrl": null,
+      "shortName": "Grammarly AI Detector",
+      "platforms": [
+        "web",
+        "extension"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "grammarly-ai-detector",
+      "name": "Grammarly AI Detector",
+      "type": "commercial",
+      "category": "text-detectors",
+      "url": "https://www.grammarly.com/ai-detector",
+      "description": "AI checker bundled into Grammarly. Convenient for writers, not a specialist forensic tool.",
+      "modalities": [
+        "text"
+      ],
+      "functions": [
+        "detect"
+      ],
+      "access": "freemium",
+      "privacy": "cloud",
+      "tags": [
+        "writing-suite"
+      ]
+    },
+    {
+      "repo": null,
+      "docsUrl": null,
+      "shortName": "Scribbr AI Detector",
+      "platforms": [
+        "web"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "scribbr-ai-detector",
+      "name": "Scribbr AI Detector",
+      "type": "website",
+      "category": "text-detectors",
+      "url": "https://www.scribbr.com/ai-detector/",
+      "description": "Student-facing no-signup detector for chapter-sized text checks.",
+      "modalities": [
+        "text"
+      ],
+      "functions": [
+        "detect"
+      ],
+      "access": "free",
+      "privacy": "cloud",
+      "tags": [
+        "students"
+      ]
+    },
+    {
+      "repo": null,
+      "docsUrl": null,
+      "shortName": "Undetectable AI",
+      "platforms": [
+        "web"
+      ],
+      "relatedIds": [],
+      "notes": "Vendor also sells evasion tools. Separate review use from humanizer use.",
+      "id": "undetectable-ai",
+      "name": "Undetectable AI",
+      "type": "commercial",
+      "category": "text-detectors",
+      "url": "https://undetectable.ai/",
+      "description": "Multi-detector dashboard that also sells humanizers. Use the check side only if the job is review.",
+      "modalities": [
+        "text"
+      ],
+      "functions": [
+        "detect"
+      ],
+      "access": "freemium",
+      "privacy": "cloud",
+      "tags": [
+        "multi-detector",
+        "humanizer-vendor"
+      ]
+    },
+    {
+      "repo": "https://github.com/distil-labs/distil-ai-slop-detector",
+      "docsUrl": "https://www.distillabs.ai/blog/distil-ai-slop-detector/",
+      "shortName": "Distil AI Slop Detector",
+      "platforms": [
+        "browser",
+        "extension"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "distil-ai-slop-detector",
+      "name": "Distil AI Slop Detector",
+      "type": "repo",
+      "category": "oss-text-engines",
+      "url": "https://github.com/distil-labs/distil-ai-slop-detector",
+      "description": "270M quantized model that runs in the browser. Text never leaves the machine.",
+      "modalities": [
+        "text"
+      ],
+      "functions": [
+        "detect"
+      ],
+      "access": "free",
+      "privacy": "local",
+      "tags": [
+        "on-device",
+        "huggingface",
+        "privacy"
+      ]
+    },
+    {
+      "repo": "https://github.com/pablocaeg/sloptotal",
+      "docsUrl": null,
+      "shortName": "SlopTotal",
+      "platforms": [
+        "self-hosted",
+        "api"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "sloptotal",
+      "name": "SlopTotal",
+      "type": "repo",
+      "category": "oss-text-engines",
+      "url": "https://github.com/pablocaeg/sloptotal",
+      "description": "Self-hosted multi-engine text scanner described as VirusTotal for AI slop. Runs on CPU.",
+      "modalities": [
+        "text"
+      ],
+      "functions": [
+        "detect"
+      ],
+      "access": "self-hosted",
+      "privacy": "local",
+      "tags": [
+        "multi-engine",
+        "privacy",
+        "cpu"
+      ]
+    },
+    {
+      "repo": "https://github.com/SicariusSicariiStuff/SLOP_Detector",
+      "docsUrl": null,
+      "shortName": "SLOP_Detector",
+      "platforms": [
+        "cli",
+        "python"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "slop-detector-sharegpt",
+      "name": "SLOP_Detector",
+      "type": "repo",
+      "category": "oss-text-engines",
+      "url": "https://github.com/SicariusSicariiStuff/SLOP_Detector",
+      "description": "Dictionary-based slop scorer for ShareGPT JSON and plain text. Useful for filtering training data.",
+      "modalities": [
+        "text"
+      ],
+      "functions": [
+        "detect"
+      ],
+      "access": "free",
+      "privacy": "local",
+      "tags": [
+        "training-data",
+        "dictionary"
+      ]
+    },
+    {
+      "repo": "https://github.com/ahans30/Binoculars",
+      "docsUrl": null,
+      "shortName": "Binoculars",
+      "platforms": [
+        "python",
+        "research"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "binoculars",
+      "name": "Binoculars",
+      "type": "repo",
+      "category": "oss-text-engines",
+      "url": "https://github.com/ahans30/Binoculars",
+      "description": "Zero-shot two-model detector that contrasts closely related LLMs. No task-specific training data.",
+      "modalities": [
+        "text"
+      ],
+      "functions": [
+        "detect"
+      ],
+      "access": "free",
+      "privacy": "local",
+      "tags": [
+        "zero-shot",
+        "research",
+        "icml"
+      ]
+    },
+    {
+      "repo": "https://github.com/baoguangsheng/fast-detect-gpt",
+      "docsUrl": "https://fastdetect.net",
+      "shortName": "Fast-DetectGPT",
+      "platforms": [
+        "python",
+        "web",
+        "api"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "fast-detect-gpt",
+      "name": "Fast-DetectGPT",
+      "type": "repo",
+      "category": "oss-text-engines",
+      "url": "https://github.com/baoguangsheng/fast-detect-gpt",
+      "description": "Efficient zero-shot detector using conditional probability curvature. Demo and API available.",
+      "modalities": [
+        "text"
+      ],
+      "functions": [
+        "detect"
+      ],
+      "access": "free",
+      "privacy": "local",
+      "tags": [
+        "zero-shot",
+        "research",
+        "iclr"
+      ]
+    },
+    {
+      "repo": "https://github.com/eric-mitchell/detect-gpt",
+      "docsUrl": null,
+      "shortName": "DetectGPT",
+      "platforms": [
+        "python",
+        "research"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "detect-gpt",
+      "name": "DetectGPT",
+      "type": "repo",
+      "category": "oss-text-engines",
+      "url": "https://github.com/eric-mitchell/detect-gpt",
+      "description": "Original probability-curvature method for zero-shot machine-text detection.",
+      "modalities": [
+        "text"
+      ],
+      "functions": [
+        "detect"
+      ],
+      "access": "free",
+      "privacy": "local",
+      "tags": [
+        "zero-shot",
+        "research",
+        "baseline"
+      ]
+    },
+    {
+      "repo": "https://github.com/HendrikStrobelt/detecting-fake-text",
+      "docsUrl": null,
+      "shortName": "GLTR",
+      "platforms": [
+        "web",
+        "research"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "gltr",
+      "name": "GLTR",
+      "type": "repo",
+      "category": "oss-text-engines",
+      "url": "https://github.com/HendrikStrobelt/detecting-fake-text",
+      "description": "Giant Language Model Test Room. Visualizes token-rank predictability. Teaching tool more than a modern detector.",
+      "modalities": [
+        "text"
+      ],
+      "functions": [
+        "review"
+      ],
+      "access": "free",
+      "privacy": "local",
+      "tags": [
+        "visualization",
+        "legacy"
+      ]
+    },
+    {
+      "repo": "https://github.com/blader/humanizer",
+      "docsUrl": null,
+      "shortName": "blader/humanizer",
+      "platforms": [
+        "agent-skill",
+        "github"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "humanizer-rules",
+      "name": "blader/humanizer",
+      "type": "repo",
+      "category": "writing-rules",
+      "url": "https://github.com/blader/humanizer",
+      "description": "Large vocabulary and cadence rule set for stripping slop from drafts.",
+      "modalities": [
+        "text"
+      ],
+      "functions": [
+        "remove",
+        "review"
+      ],
+      "access": "free",
+      "privacy": "local",
+      "tags": [
+        "rules",
+        "humanize"
+      ]
+    },
+    {
+      "repo": "https://github.com/hardikpandya/stop-slop",
+      "docsUrl": null,
+      "shortName": "stop-slop",
+      "platforms": [
+        "agent-skill",
+        "github"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "stop-slop",
+      "name": "stop-slop",
+      "type": "repo",
+      "category": "writing-rules",
+      "url": "https://github.com/hardikpandya/stop-slop",
+      "description": "Rule set targeting business jargon, false agency, and structural clichés.",
+      "modalities": [
+        "text"
+      ],
+      "functions": [
+        "remove",
+        "review"
+      ],
+      "access": "free",
+      "privacy": "local",
+      "tags": [
+        "rules",
+        "jargon"
+      ]
+    },
+    {
+      "repo": "https://github.com/petergyang/no-ai-slop",
+      "docsUrl": null,
+      "shortName": "no-ai-slop",
+      "platforms": [
+        "agent-skill",
+        "github"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "no-ai-slop",
+      "name": "no-ai-slop",
+      "type": "repo",
+      "category": "writing-rules",
+      "url": "https://github.com/petergyang/no-ai-slop",
+      "description": "20-plus high-precision tells with a detect-only mode.",
+      "modalities": [
+        "text"
+      ],
+      "functions": [
+        "review",
+        "remove"
+      ],
+      "access": "free",
+      "privacy": "local",
+      "tags": [
+        "rules",
+        "detect-only"
+      ]
+    },
+    {
+      "repo": "https://github.com/seyedehsanhadi/sloptrim",
+      "docsUrl": null,
+      "shortName": "sloptrim",
+      "platforms": [
+        "python",
+        "cli"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "sloptrim",
+      "name": "sloptrim",
+      "type": "repo",
+      "category": "writing-rules",
+      "url": "https://github.com/seyedehsanhadi/sloptrim",
+      "description": "71-pattern catalogue with before/after pairs. Python stdlib only, no network or model.",
+      "modalities": [
+        "text"
+      ],
+      "functions": [
+        "review",
+        "remove"
+      ],
+      "access": "free",
+      "privacy": "local",
+      "tags": [
+        "taxonomy",
+        "offline"
+      ]
+    },
+    {
+      "repo": "https://github.com/berelevant-ai/slopless",
+      "docsUrl": null,
+      "shortName": "slopless",
+      "platforms": [
+        "cli",
+        "textlint"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "slopless",
+      "name": "slopless",
+      "type": "repo",
+      "category": "writing-rules",
+      "url": "https://github.com/berelevant-ai/slopless",
+      "description": "textlint rules and CLI for English Markdown slop.",
+      "modalities": [
+        "text"
+      ],
+      "functions": [
+        "lint",
+        "review"
+      ],
+      "access": "free",
+      "privacy": "local",
+      "tags": [
+        "markdown",
+        "linter"
+      ]
+    },
+    {
+      "repo": "https://github.com/eric-tramel/slop-guard",
+      "docsUrl": null,
+      "shortName": "slop-guard",
+      "platforms": [
+        "cli"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "slop-guard",
+      "name": "slop-guard",
+      "type": "repo",
+      "category": "writing-rules",
+      "url": "https://github.com/eric-tramel/slop-guard",
+      "description": "Scored density rules for em dashes, colons, bullets, and closing aphorisms fitted against a newspaper corpus.",
+      "modalities": [
+        "text"
+      ],
+      "functions": [
+        "lint",
+        "review"
+      ],
+      "access": "free",
+      "privacy": "local",
+      "tags": [
+        "density",
+        "style"
+      ]
+    },
+    {
+      "repo": "https://github.com/scanaislop/aislop",
+      "docsUrl": null,
+      "shortName": "aislop",
+      "platforms": [
+        "cli",
+        "ci",
+        "github"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "aislop",
+      "name": "aislop",
+      "type": "repo",
+      "category": "code-slop",
+      "url": "https://scanaislop.com",
+      "description": "Deterministic CLI and PR gate for AI-generated code residue. Run npx aislop scan. No LLM at runtime.",
+      "modalities": [
+        "code"
+      ],
+      "functions": [
+        "lint",
+        "review"
+      ],
+      "access": "freemium",
+      "privacy": "local",
+      "tags": [
+        "quality-gate",
+        "agent-code",
+        "deterministic"
+      ]
+    },
+    {
+      "repo": "https://github.com/flamehaven01/AI-SLOP-Detector",
+      "docsUrl": null,
+      "shortName": "AI-SLOP-Detector",
+      "platforms": [
+        "python",
+        "ci"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "ai-slop-detector-code",
+      "name": "AI-SLOP-Detector",
+      "type": "repo",
+      "category": "code-slop",
+      "url": "https://github.com/flamehaven01/AI-SLOP-Detector",
+      "description": "Static analysis for empty functions, fake documentation, and inflated comments in AI-generated code.",
+      "modalities": [
+        "code"
+      ],
+      "functions": [
+        "lint",
+        "review"
+      ],
+      "access": "free",
+      "privacy": "local",
+      "tags": [
+        "ast",
+        "comments"
+      ]
+    },
+    {
+      "repo": "https://github.com/dmmulroy/anti-slop",
+      "docsUrl": null,
+      "shortName": "dmmulroy/anti-slop",
+      "platforms": [
+        "javascript",
+        "typescript"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "dmmulroy-anti-slop",
+      "name": "dmmulroy/anti-slop",
+      "type": "repo",
+      "category": "code-slop",
+      "url": "https://github.com/dmmulroy/anti-slop",
+      "description": "Oxlint rules that reject low-evidence TypeScript and JavaScript patterns common in agent output.",
+      "modalities": [
+        "code"
+      ],
+      "functions": [
+        "lint"
+      ],
+      "access": "free",
+      "privacy": "local",
+      "tags": [
+        "oxlint",
+        "typescript"
+      ]
+    },
+    {
+      "repo": "https://github.com/jdiegosierra/contributor-report",
+      "docsUrl": null,
+      "shortName": "contributor-report",
+      "platforms": [
+        "github-actions"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "contributor-report",
+      "name": "contributor-report",
+      "type": "repo",
+      "category": "code-slop",
+      "url": "https://github.com/jdiegosierra/contributor-report",
+      "description": "GitHub Action that scores contributor quality to combat AI-generated spam PRs.",
+      "modalities": [
+        "code"
+      ],
+      "functions": [
+        "review"
+      ],
+      "access": "free",
+      "privacy": "cloud",
+      "tags": [
+        "prs",
+        "spam",
+        "metrics"
+      ]
+    },
+    {
+      "repo": null,
+      "docsUrl": null,
+      "shortName": "CodeLeaks",
+      "platforms": [
+        "web",
+        "api",
+        "lms"
+      ],
+      "relatedIds": [
+        "copyleaks"
+      ],
+      "notes": null,
+      "id": "copyleaks-codeleaks",
+      "name": "Copyleaks CodeLeaks",
+      "type": "commercial",
+      "category": "code-slop",
+      "url": "https://copyleaks.com/",
+      "description": "Commercial scanner for AI-generated source code, often bundled with Copyleaks integrity products.",
+      "modalities": [
+        "code"
+      ],
+      "functions": [
+        "detect"
+      ],
+      "access": "paid",
+      "privacy": "cloud",
+      "tags": [
+        "authorship",
+        "enterprise"
+      ]
+    },
+    {
+      "repo": "https://github.com/Nutlope/hallmark",
+      "docsUrl": null,
+      "shortName": "hallmark",
+      "platforms": [
+        "claude-code",
+        "cursor",
+        "codex"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "hallmark",
+      "name": "hallmark",
+      "type": "skill",
+      "category": "design-slop",
+      "url": "https://github.com/Nutlope/hallmark",
+      "description": "Anti-slop design skill for Claude Code, Cursor, and Codex.",
+      "modalities": [
+        "design"
+      ],
+      "functions": [
+        "remove",
+        "review"
+      ],
+      "access": "free",
+      "privacy": "local",
+      "tags": [
+        "agent-skill",
+        "ui"
+      ]
+    },
+    {
+      "repo": "https://github.com/miqdadbadjuber/anti-slop",
+      "docsUrl": null,
+      "shortName": "miqdadbadjuber/anti-slop",
+      "platforms": [
+        "agent-skill"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "miqdad-anti-slop",
+      "name": "miqdadbadjuber/anti-slop",
+      "type": "skill",
+      "category": "design-slop",
+      "url": "https://github.com/miqdadbadjuber/anti-slop",
+      "description": "Agent rules covering generic UI, text, and code slop.",
+      "modalities": [
+        "design",
+        "text",
+        "code"
+      ],
+      "functions": [
+        "remove",
+        "review"
+      ],
+      "access": "free",
+      "privacy": "local",
+      "tags": [
+        "agent-skill",
+        "ui"
+      ]
+    },
+    {
+      "repo": null,
+      "docsUrl": null,
+      "shortName": "Hive",
+      "platforms": [
+        "web",
+        "api",
+        "chrome"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "hive-ai-detection",
+      "name": "Hive AI-Generated Content Detection",
+      "type": "commercial",
+      "category": "synthetic-media",
+      "url": "https://hivemoderation.com/ai-generated-content-detection",
+      "description": "Enterprise classifier for AI images, video, deepfakes, voice, music, and text. Strong independent false-positive record on real news photos in 2026 audits.",
+      "modalities": [
+        "image",
+        "video",
+        "audio",
+        "text"
+      ],
+      "functions": [
+        "detect"
+      ],
+      "access": "freemium",
+      "privacy": "cloud",
+      "tags": [
+        "moderation",
+        "deepfake",
+        "enterprise"
+      ]
+    },
+    {
+      "repo": null,
+      "docsUrl": null,
+      "shortName": "Sightengine",
+      "platforms": [
+        "api",
+        "web"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "sightengine",
+      "name": "Sightengine AI Image Detection",
+      "type": "commercial",
+      "category": "synthetic-media",
+      "url": "https://sightengine.com/detect-ai-generated-images",
+      "description": "Developer API that classifies generated images and deepfakes from named generators without relying on metadata.",
+      "modalities": [
+        "image",
+        "video",
+        "audio"
+      ],
+      "functions": [
+        "detect"
+      ],
+      "access": "freemium",
+      "privacy": "cloud",
+      "tags": [
+        "api",
+        "moderation"
+      ]
+    },
+    {
+      "repo": null,
+      "docsUrl": null,
+      "shortName": "AI or Not",
+      "platforms": [
+        "web",
+        "api"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "ai-or-not",
+      "name": "AI or Not",
+      "type": "commercial",
+      "category": "synthetic-media",
+      "url": "https://www.aiornot.com/",
+      "description": "Multi-modal checker for images, video, audio, and text. Stronger on doctored photos in some 2026 audits.",
+      "modalities": [
+        "image",
+        "video",
+        "audio",
+        "text"
+      ],
+      "functions": [
+        "detect"
+      ],
+      "access": "freemium",
+      "privacy": "cloud",
+      "tags": [
+        "multimodal"
+      ]
+    },
+    {
+      "repo": null,
+      "docsUrl": null,
+      "shortName": "Illuminarty",
+      "platforms": [
+        "web"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "illuminarty",
+      "name": "Illuminarty",
+      "type": "website",
+      "category": "synthetic-media",
+      "url": "https://illuminarty.ai/",
+      "description": "Image detector that returns a region heatmap showing which parts look generated.",
+      "modalities": [
+        "image",
+        "text"
+      ],
+      "functions": [
+        "detect",
+        "review"
+      ],
+      "access": "freemium",
+      "privacy": "cloud",
+      "tags": [
+        "heatmap",
+        "explainable"
+      ]
+    },
+    {
+      "repo": null,
+      "docsUrl": null,
+      "shortName": "Reality Defender",
+      "platforms": [
+        "web",
+        "api"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "reality-defender",
+      "name": "Reality Defender",
+      "type": "commercial",
+      "category": "synthetic-media",
+      "url": "https://www.realitydefender.com/",
+      "description": "Deepfake and impersonation detection across image, video, and audio, including live-call use cases.",
+      "modalities": [
+        "image",
+        "video",
+        "audio"
+      ],
+      "functions": [
+        "detect"
+      ],
+      "access": "freemium",
+      "privacy": "cloud",
+      "tags": [
+        "deepfake",
+        "fraud"
+      ]
+    },
+    {
+      "repo": null,
+      "docsUrl": null,
+      "shortName": "Resemble Detect",
+      "platforms": [
+        "api",
+        "web"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "resemble-detect",
+      "name": "Resemble Detect",
+      "type": "commercial",
+      "category": "synthetic-media",
+      "url": "https://www.resemble.ai/detect/",
+      "description": "Real-time detection of AI voice clones and synthetic speech across many voice models.",
+      "modalities": [
+        "audio"
+      ],
+      "functions": [
+        "detect"
+      ],
+      "access": "paid",
+      "privacy": "cloud",
+      "tags": [
+        "voice",
+        "deepfake"
+      ]
+    },
+    {
+      "repo": null,
+      "docsUrl": null,
+      "shortName": "ElevenLabs AI Speech Classifier",
+      "platforms": [
+        "web"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "elevenlabs-speech-classifier",
+      "name": "ElevenLabs AI Speech Classifier",
+      "type": "website",
+      "category": "synthetic-media",
+      "url": "https://elevenlabs.io/ai-speech-classifier",
+      "description": "Free classifier focused on detecting ElevenLabs-generated speech.",
+      "modalities": [
+        "audio"
+      ],
+      "functions": [
+        "detect"
+      ],
+      "access": "free",
+      "privacy": "cloud",
+      "tags": [
+        "voice",
+        "narrow"
+      ]
+    },
+    {
+      "repo": null,
+      "docsUrl": null,
+      "shortName": "Content Credentials Verify",
+      "platforms": [
+        "web"
+      ],
+      "relatedIds": [
+        "c2pa"
+      ],
+      "notes": null,
+      "id": "content-credentials-verify",
+      "name": "Content Credentials Verify",
+      "type": "website",
+      "category": "provenance",
+      "url": "https://contentcredentials.org/verify",
+      "description": "Reads C2PA Content Credentials manifests. A stamp check, not a pixel classifier.",
+      "modalities": [
+        "image",
+        "video"
+      ],
+      "functions": [
+        "provenance"
+      ],
+      "access": "free",
+      "privacy": "local",
+      "tags": [
+        "c2pa",
+        "metadata"
+      ]
+    },
+    {
+      "repo": null,
+      "docsUrl": null,
+      "shortName": "C2PA",
+      "platforms": [
+        "standard"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "c2pa",
+      "name": "C2PA",
+      "type": "website",
+      "category": "provenance",
+      "url": "https://c2pa.org/",
+      "description": "Coalition for Content Provenance and Authenticity. Open standard behind Content Credentials.",
+      "modalities": [
+        "image",
+        "video",
+        "audio"
+      ],
+      "functions": [
+        "provenance"
+      ],
+      "access": "free",
+      "privacy": "n/a",
+      "tags": [
+        "standard",
+        "iso"
+      ]
+    },
+    {
+      "repo": null,
+      "docsUrl": null,
+      "shortName": "Google SynthID",
+      "platforms": [
+        "google",
+        "huggingface"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "synthid",
+      "name": "Google SynthID",
+      "type": "commercial",
+      "category": "provenance",
+      "url": "https://deepmind.google/technologies/synthid/",
+      "description": "First-party watermarking for Google-generated media and, via Transformers, SynthID Text.",
+      "modalities": [
+        "image",
+        "video",
+        "audio",
+        "text"
+      ],
+      "functions": [
+        "provenance"
+      ],
+      "access": "free",
+      "privacy": "n/a",
+      "tags": [
+        "watermark"
+      ]
+    },
+    {
+      "repo": "https://github.com/sadjadeb/DetectZoo",
+      "docsUrl": null,
+      "shortName": "DetectZoo",
+      "platforms": [
+        "python"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "detectzoo",
+      "name": "DetectZoo",
+      "type": "repo",
+      "category": "benchmarks",
+      "url": "https://github.com/sadjadeb/DetectZoo",
+      "description": "Unified toolkit with 61 detectors, 22 datasets, and a shared evaluation pipeline across text, audio, and image.",
+      "modalities": [
+        "text",
+        "audio",
+        "image"
+      ],
+      "functions": [
+        "benchmark",
+        "detect"
+      ],
+      "access": "free",
+      "privacy": "local",
+      "tags": [
+        "research",
+        "toolkit"
+      ]
+    },
+    {
+      "repo": "https://github.com/liamdugan/raid",
+      "docsUrl": null,
+      "shortName": "RAID",
+      "platforms": [
+        "research"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "raid-benchmark",
+      "name": "RAID",
+      "type": "repo",
+      "category": "benchmarks",
+      "url": "https://github.com/liamdugan/raid",
+      "description": "Large public benchmark for AI-text detection across generators and adversarial attacks.",
+      "modalities": [
+        "text"
+      ],
+      "functions": [
+        "benchmark"
+      ],
+      "access": "free",
+      "privacy": "n/a",
+      "tags": [
+        "dataset",
+        "acl"
+      ]
+    },
+    {
+      "repo": "https://github.com/rsionnach/sloppylint",
+      "docsUrl": null,
+      "shortName": "sloppylint",
+      "platforms": [
+        "python"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "sloppylint",
+      "name": "sloppylint",
+      "type": "repo",
+      "category": "code-slop",
+      "url": "https://github.com/rsionnach/sloppylint",
+      "description": "Python linter for over-engineering, hallucinated APIs, and dead code left by coding agents.",
+      "modalities": [
+        "code"
+      ],
+      "functions": [
+        "lint"
+      ],
+      "access": "free",
+      "privacy": "local",
+      "tags": [
+        "python",
+        "hallucinated-api"
+      ]
+    },
+    {
+      "repo": "https://github.com/gouwsxander/slop-detector",
+      "docsUrl": null,
+      "shortName": "gouwsxander/slop-detector",
+      "platforms": [
+        "python"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "gouwsxander-slop-detector",
+      "name": "gouwsxander/slop-detector",
+      "type": "repo",
+      "category": "oss-text-engines",
+      "url": "https://github.com/gouwsxander/slop-detector",
+      "description": "End-to-end slop detector build published as a walkthrough.",
+      "modalities": [
+        "text"
+      ],
+      "functions": [
+        "detect"
+      ],
+      "access": "free",
+      "privacy": "local",
+      "tags": [
+        "tutorial"
+      ]
+    },
+    {
+      "repo": "https://github.com/ctkrug/tellsign",
+      "docsUrl": null,
+      "shortName": "tellsign",
+      "platforms": [
+        "browser"
+      ],
+      "relatedIds": [],
+      "notes": null,
+      "id": "tellsign",
+      "name": "tellsign",
+      "type": "repo",
+      "category": "writing-rules",
+      "url": "https://github.com/ctkrug/tellsign",
+      "description": "In-browser highlighter with weighted word and phrase tells. Style checker, not an authorship verdict.",
+      "modalities": [
+        "text"
+      ],
+      "functions": [
+        "review"
+      ],
+      "access": "free",
+      "privacy": "local",
+      "tags": [
+        "highlighter",
+        "style"
+      ]
+    }
+  ]
+}
